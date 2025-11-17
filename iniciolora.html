@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politecnico - Altagracia iglesias de Lora</title>
+    <link rel="stylesheet" href="diseñolora.css">
+</head>
+<body>
+    <header>
+        <h1>Altagracia Iglesias de Lora</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#noticias">Noticias ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Noticias Recientes</a></li>
+                        <li><a href="#">Importantes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#actividades">Actividades ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Dentro del Centro</a></li>
+                        <li><a href="#">Fuera del Centro</a></li>
+                        <li><a href="#">Futuras Actividades</a></li>
+                        <li><a href="#">Actividades Fijas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#logros">Logros ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Reconocimientos del Centro</a></li>
+                        <li><a href="#">Olimpiadas</a></li>
+                        <li><a href="#">Deportes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#contacto">Contacto ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Redes Sociales</a></li>
+                        <li><a href="#">Mensajería</a></li>
+                        <li><a href="#">Ubicación</a></li>
+                    </ul>
+                </li>
+               
+            
+        </nav>
+    </header>
+
+    <div class="carrusel-container">
+        <div class="carrusel">
+            <div class="carrusel-slide active">
+                <img src="WhatsApp Image 2025-10-12 at 12.20.00 PM.jpeg" alt="Bienvenidos">
+                <div class="carrusel-caption">Bienvenidos al Politécnico</div>
+            </div>
+            <div class="carrusel-slide">
+                <img src="WhatsApp Image 2025-10-12 at 12.20.49 PM.jpeg" alt="Laboratorio Nuevo">
+                <div class="carrusel-caption">¡Directora Felicia Hernandez!</div>
+            </div>
+            <div class="carrusel-slide">
+                <img src="P1012607.JPG" alt="Actividades 2025">
+                <div class="carrusel-caption">Centro educativo</div>
+            </div>
+        </div>
+    </div>
+
+    <section id="inicio" class="seccion bienvenida-flex">
+        <img src="Captura de pantalla 2025-05-19 235325.png" alt="Logo del Centro" class="logo-bienvenida">
+        <div class="bienvenida-texto">
+            <h2>Bienvenidos</h2>
+            <p>Esta página fue creada para mantener informados a todos los estudiantes sobre las actividades, noticias y logros del centro educativo. ¡Mantente conectado y participa!</p>
+        </div>
+    </section>
+     <section class="seccion mision-vision-valores">
+        <!-- Este código sirve para mostrar la misión, visión y valores en tres columnas -->
+        <div class="mv-card">
+            <h3>Misión</h3>
+            <p>Formar estudiantes íntegros, críticos y creativos, capaces de contribuir positivamente a la sociedad mediante una educación de calidad.</p>
+        </div>
+        <div class="mv-card">
+            <h3>Visión</h3>
+            <p>Ser un centro educativo líder en innovación, excelencia académica y formación en valores, reconocido a nivel nacional.</p>
+        </div>
+        <div class="mv-card">
+            <h3>Valores</h3>
+            <ul>
+                <li>Respeto</li>
+                <li>Responsabilidad</li>
+                <li>Solidaridad</li>
+                <li>Innovación</li>
+                <li>Compromiso</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="noticias" class="seccion">
+        <h2>Noticias Recientes 📰</h2>
+        <article class="card">
+            <h3>Nuevas compuadoras en el laboratorio de informatica</h3>
+            <p>El centro educativo inauguró un moderno laboratorio de informática para apoyar el aprendizaje digital de los estudiantes.</p>
+        </article>
+        <article class="card">
+            <h3>Cancelacion de clases por motivo de lluvia</h3>
+            <p>El dia 16 de octubre no habra docencia devido al clima lluvioso.</p>
+        </article>
+    </section>
+
+    <section id="actividades" class="seccion">
+        <h2>Próximas Actividades</h2>
+        <ul>
+            <li> Feria del dia de la alimentacion – 16 de octubre</li>
+            <li>dia de la raza – 12 de octubre</li>
+            <li> pasadia familiar – 20 de noviembre</li>
+        </ul>
+    </section>
+
+    <section id="logros" class="seccion">
+        <h2>Logros del Centro 🏆</h2>
+        <p>Durante el último año, nuestros estudiantes lograron:</p>
+        <ul>
+            <li> Primer lugar en las Olimpiadas de speling bee</li>
+            <li>segundo lugar en torneo de bascketball</li>
+            <li>Trofeo de bronce al Politecnico</li>
+        </ul>
+    </section>
+
+    <!-- Mapa interactivo Bing -->
+    <section id="mapa" class="seccion">
+        <h2>Ubicación del Centro 📍</h2>
+        <div class="mapa-container">
+            <iframe 
+                src="https://www.bing.com/maps/embed?h=400&w=800&cp=19.4298095703125~-70.68273162841797&lvl=15&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+                width="100%" 
+                height="400" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen 
+                aria-label="Mapa del Politécnico Altagracia Iglesias de Lora">
+            </iframe>
+        </div>
+    </section>
+
+   
+
+    <footer id="contacto">
+        <h2>Informacion de contacto</h2>
+        <p>IPAIL | Contacto:8098349343📞 <a href="89382932932">info@politecnicoaltagraciaiglesias.edu.do</a><p>📲IG politecnicoaltagracia </p></p>
+    </footer>
+
+    <script src="lora.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,264 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #f5faff;
+    color: #003366;
+}
+
+header {
+    background-color: #256fbd;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+/* Menú principal */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    background: #036ad9;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.menu > li > a:hover,
+.menu > li.dropdown:hover > a {
+    background: #90c7fe;
+}
+
+/* Desplegables */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #40414c;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    z-index: 10;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 12px 18px;
+    color: #9fcbf6;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background 0.2s;
+}
+
+.dropdown-content li a:hover {
+    background: #4962c8;
+}
+
+/* Mostrar desplegable al pasar el mouse */
+.menu li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive para móviles */
+@media (max-width: 700px) {
+    .menu {
+        flex-direction: column;
+        gap: 0;
+    }
+    .menu > li > a {
+        padding: 12px;
+    }
+    .dropdown-content {
+        position: static;
+        min-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+
+.seccion {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #0056b3;
+}
+
+.card {
+    background-color: #e6f0ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #6aa4de;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #06131b;
+    text-decoration: none;
+}
+
+.carrusel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.carrusel {
+    position: relative;
+    width: 800px;
+    max-width: 95vw;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    background: #fff;
+}
+
+.carrusel-slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: 0;
+    transition: opacity 0.7s;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.carrusel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    background: rgba(44,62,80,0.7);
+    padding: 10px 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.bienvenida-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+/*logo*/
+.logo-bienvenida {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: #fff;
+}
+
+.bienvenida-texto {
+    flex: 1;
+}
+
+/* Responsive para móviles */
+@media (max-width: 700px) {
+    .bienvenida-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .logo-bienvenida {
+        margin-bottom: 10px;
+    }
+}
+
+/* Este código sirve para mostrar misión, visión y valores en tres columnas con estilo */
+.mision-vision-valores {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+.mv-card {
+    background: #e6f0ff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 25px 20px;
+    flex: 1 1 0;
+    min-width: 220px;
+    text-align: center;
+}
+
+.mv-card h3 {
+    color: #256fbd;
+    margin-bottom: 10px;
+}
+
+.mv-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mv-card ul li {
+    margin-bottom: 6px;
+}
+
+/* Responsive: una columna en móviles */
+@media (max-width: 800px) {
+    .mision-vision-valores {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
